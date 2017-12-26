@@ -1,0 +1,16 @@
+<div  class="container">
+	<div ng-repeat="data in data" class="col-sm-3">
+		<div id="wishlistthumbnail" class="thumbnail">
+			<div class="wishlistimage_alignment">
+				<img class="img-responsive" src={{data.bookDetail.imagePath}} alt="Image">
+			</div>
+			<div class="wishlistauthor_alignment">
+				Author:<strong> {{data.bookDetail.author}}</strong>
+			</div>
+			<div class="wishList_submitbutton_alignment">
+				<button ng-click="removeFromWishList(data.wishListId)"
+					class="btn btn-danger">Remove from WishList</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+	<div ng-repeat="data in subscribedData" class="col-sm-3" >
+		<div id="subscribedBooks_thumbnail" class="thumbnail">
+			<div class="subscribedBooksImage_alignment">
+				<img class="img-responsive" src={{data.bookDetail.imagePath}} alt="Image">
+			</div>
+			<div class="subscribedBooksauthor_alignment">
+				Author:<strong> {{data.bookDetail.author}}</strong>
+			</div>
+			<div class="subscribedBooks_submitbutton_alignment">
+				<button ng-click="viewDetails(data.bookDetail.bookId)"
+					class="btn btn-success">View Detail</button>
+			</div>
+		</div>
+	</div>
+</div>
+
